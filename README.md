@@ -183,7 +183,7 @@ In app/views/homepage/index.html.erb, replace the existing code with <div id="ro
 
 edit the App.jsx file like this:
 
-import React from "react";
+[import React from "react";
 
 const App = () => {
 const [data, setData] = React.useState([]);
@@ -215,7 +215,7 @@ return (
 );
 };
 
-export default App;
+export default App;](https://github.com/Lil-Youn/vite-rails-typescript-sample-app/blob/a7381ac66c82b4f7e6de52d793dcf2e01af7c257/app/frontend/components/App.tsx#L1-L31)
 
 this should render the whola component in a more readable way.
 
