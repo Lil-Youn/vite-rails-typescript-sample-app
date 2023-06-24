@@ -150,6 +150,7 @@ then move to sample-app/app/frontend/entrypoints/application.js, remove this fil
 
 write this code into the new index.jsx file
 
+```react
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -161,6 +162,7 @@ ReactDOM.render(
 </React.StrictMode>,
 document.getElementById('root')
 );
+```
 
 # create a new App.jsx file in your frontend folder
 
