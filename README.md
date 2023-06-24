@@ -198,7 +198,7 @@ Remove the
 ```
 <%= vite_javascript_tag ‘application' %>
 ```
-as we have deleted app/javascript/entrypoints/application.js. Include this javascript tag: (https://github.com/Lil-Youn/vite-rails-typescript-sample-app/blob/2a415c7f647a4aa753c1b539d6bd1a670336a436/app/views/layouts/application.html.erb#L10) to load the index.jsx file we have defined earlier.
+as we have deleted app/javascript/entrypoints/application.js. Include this javascript tag: https://github.com/Lil-Youn/vite-rails-typescript-sample-app/blob/2a415c7f647a4aa753c1b539d6bd1a670336a436/app/views/layouts/application.html.erb#L10 to load the index.jsx file we have defined earlier.
 
 In app/views/homepage/index.html.erb, replace the existing code with https://github.com/Lil-Youn/vite-rails-typescript-sample-app/blob/0018a8dfc6b96863cbf07e76788f59ac92c99ee0/app/views/homepage/index.html.erb#L1 so the contents of the React app can be displayed in this div tag.
 
@@ -215,6 +215,18 @@ this should render the whole component in a more readable way.
 run `$npm i typescript`
 
 package installed. you should be able to rename your App.jsx file to App.tsx and write typescript code now... BOOOOOOM!
+
+# start the whole app
+run `$ rails s`to start the rails server and in a seperate or splitted terminal run `$ npm run dev`to start the frontend with vite
+
+# Project information
+Based on the Creating a React, Rails and Vite App from Chow Jia Ying / https://medium.com/@chowjiaying211/creating-a-react-rails-and-vite-app-74bb9b08a011 from Aug 12, 2021
+
+I added some other dependencies:
+App now includes:
+Typescript
+Material UI
+
 
 # Rails and Vite information
 
