@@ -106,7 +106,9 @@ run `$ db:seed`
 head over to: http://localhost:3000/api/v1/friends
 to see the results in your db. the test data we wrote in the seed.rb file should now be displayed in JSON format:
 
+```json
 [{"id":1,"first_name":"John","last_name":"Smith","email":"john.smith@gmail.com","twitter":"@johnsmith","created_at":"2023-06-24T05:31:13.458Z","updated_at":"2023-06-24T05:31:13.458Z"},{"id":2,"first_name":"Jane","last_name":"Doe","email":"jane.doe@gmail.com","twitter":"@janedoe","created_at":"2023-06-24T05:31:13.465Z","updated_at":"2023-06-24T05:31:13.465Z"},{"id":3,"first_name":"Bob","last_name":"Jones","email":"bob.jones@gmail.com","twitter":"@bobjones","created_at":"2023-06-24T05:31:13.469Z","updated_at":"2023-06-24T05:31:13.469Z"}]
+```
 
 # Integrating Vite
 
