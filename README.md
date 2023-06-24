@@ -1,6 +1,6 @@
 # README
 
-# `$rails new <your-app-name> --minimal´
+# `$rails new <your-app-name> --minimal`
 
 this command builds a new rails application with minimal gems
 
