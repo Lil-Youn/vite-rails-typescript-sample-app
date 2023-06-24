@@ -183,41 +183,9 @@ In app/views/homepage/index.html.erb, replace the existing code with <div id="ro
 
 edit the App.jsx file like this:
 
-[import React from "react";
+(https://github.com/Lil-Youn/vite-rails-typescript-sample-app/blob/a7381ac66c82b4f7e6de52d793dcf2e01af7c257/app/frontend/components/App.tsx#L1-L31)
 
-const App = () => {
-const [data, setData] = React.useState([]);
-React.useEffect(() => {
-fetch("/api/v1/friends")
-.then((res) => res.json())
-.then((data) => setData(data));
-}, []);
-return (
-
-<div>
-<h1>Friends</h1>
-<hr />
-{data.map(({ first_name, last_name, email, twitter }) => (
-<>
-<h3>Name</h3>
-<div>
-{first_name} {last_name}
-</div>
-
-          <h3>Contact</h3>
-          <div>Email: {email}</div>
-          <div>Twitter: {twitter}</div>
-          <hr />
-        </>
-      ))}
-    </div>
-
-);
-};
-
-export default App;](https://github.com/Lil-Youn/vite-rails-typescript-sample-app/blob/a7381ac66c82b4f7e6de52d793dcf2e01af7c257/app/frontend/components/App.tsx#L1-L31)
-
-this should render the whola component in a more readable way.
+this should render the whole component in a more readable way.
 
 # Lets add Typescript to this project...
 
