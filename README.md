@@ -1,14 +1,14 @@
 # README
 
-# `$rails new <your-app-name> --minimal`
+ `$rails new <your-app-name> --minimal`
 
 this command builds a new rails application with minimal gems
 
-# $cd <your-app-name>
+` $cd <your-app-name>`
 
 to move in the project directory
 
-# $rails g controller Homepage index
+` $rails g controller Homepage index`
 
 create a new controller to show your page in the frontend with the index method
 In routes.rb, link the root route to the index method.
@@ -22,11 +22,11 @@ end
 
 # Set up the database
 
-Start with rails db:create, this creates the test_app_development and test_app_test databases for development
+Start with rails `$ db:create`, this creates the test_app_development and test_app_test databases for development
 
 # Start the App
 
-use command $rails s to start the app
+use command `$rails s` to start the app
 
 You should now see a simple site with this text:
 
@@ -38,15 +38,15 @@ Find me in app/views/homepage/index.html.erb
 We have a minimal setup which we can add APIs to. To create APIs, we have to generate models, controllers and the relevant API endpoints.
 
 We will create a simple friends app, so lets set up the model:
-use $rails generate model Friend first_name:string last_name:string email:string twitter:string
+use `$rails generate model Friend first_name:string last_name:string email:string twitter:string`
 
 This sets up our database for Friends and adds some extra files for managing the database model
 
-Then perform database migrations with $rails db:migrate. Run this command each time you make changes to the databases, such as adding or modifying models.
+Then perform database migrations with `$rails db:migrate`. Run this command each time you make changes to the databases, such as adding or modifying models.
 
 # Generating controllers
 
-Our API code will be written in controller files. To create a controller for articles, run this command:$rails generate controller api/v1/Friends index --skip-routes. The controller is namespaced with api/v1 to indicate that the controllers are for APIs and to version the APIs.
+Our API code will be written in controller files. To create a controller for articles, run this command:`$rails generate controller api/v1/Friends index --skip-routes`. The controller is namespaced with api/v1 to indicate that the controllers are for APIs and to version the APIs.
 
 This should generate this files:
 
@@ -93,7 +93,9 @@ write this in your file:
 
 Friend.create([{first_name: 'John', last_name: 'Smith', email: 'john.smith@gmail.com', twitter: '@johnsmith'},{first_name:'Jane', last_name: 'Doe', email: 'jane.doe@gmail.com', twitter: '@janedoe'},{first_name: 'Bob', last_name: 'Jones', email: 'bob.jones@gmail.com', twitter: '@bobjones'}])
 
+
 # This will create three friends in the database. You can verify this by running rails db:seed
+run `$ db:seed`
 
 head over to: http://localhost:3000/api/v1/friends
 to see the results in your db. the test data we wrote in the seed.rb file should now be displayed in JSON format:
@@ -108,7 +110,7 @@ We have created APIs in our Rails app, and are now ready to set up the frontend 
 
 First, install the vite_rails gem by including this in your Gemfile: gem 'vite_rails'.
 
-Install the gem in your project with the $bundle install command.
+Install the gem in your project with the `$bundle install` command.
 
 Run $bundle exec vite install to install the relevant Javascript dependencies and sample files.
 
@@ -124,7 +126,7 @@ define a script to run the Vite development server in our package.json:
 }
 }
 
-# run $bin/vite upgrade
+# run `$bin/vite upgrade`
 
 to upgrade vite to the newest version
 
@@ -132,7 +134,7 @@ open the devtools/console when on localhost:3000 and see “Vite ⚡️ Rails”
 
 # writing React code
 
-run $npm install react react-dom
+run `$npm install react react-dom`
 
 then move to sample-app/app/frontend/entrypoints/application.js, remove this file and create a new file: sample-app/app/frontend/entrypoints/index.jsx
 
@@ -189,7 +191,7 @@ this should render the whole component in a more readable way.
 
 # Lets add Typescript to this project...
 
-run $npm i typescript
+run `$npm i typescript`
 
 package installed. you should be able to rename your App.jsx file to App.tsx and write typescript code now... BOOOOOOM!
 
