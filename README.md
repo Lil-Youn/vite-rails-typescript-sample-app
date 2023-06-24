@@ -224,8 +224,9 @@ Based on the Creating a React, Rails and Vite App from Chow Jia Ying / https://m
 
 I added some other dependencies:
 App now includes:
-Typescript
-Material UI
+Typescript version : "^5.1.3"
+
+if you want to add material ui or other useful packages you can simply add them by running the npm commands
 
 
 # Rails and Vite information
