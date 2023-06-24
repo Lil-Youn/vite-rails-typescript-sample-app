@@ -172,6 +172,7 @@ sample-app/app/frontend/components/App.jsx
 
 should look like this
 
+```javascript
 import React from 'react';
 
 const App = () => {
@@ -184,6 +185,7 @@ Friends
 };
 
 export default App;
+```
 
 # Including the app in Rails
 
