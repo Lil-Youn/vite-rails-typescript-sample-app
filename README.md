@@ -124,6 +124,7 @@ Run $bundle exec vite install to install the relevant Javascript dependencies an
 
 define a script to run the Vite development server in our package.json:
 
+```json
 {
 "devDependencies": {
 "vite": "^2.4.4",
@@ -133,6 +134,7 @@ define a script to run the Vite development server in our package.json:
 "dev": "bin/vite dev"
 }
 }
+```
 
 # run `$bin/vite upgrade`
 
