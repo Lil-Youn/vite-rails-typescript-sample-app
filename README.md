@@ -103,7 +103,7 @@ Friend.create([{first_name: 'John', last_name: 'Smith', email: 'john.smith@gmail
 
 
 # This will create three friends in the database. You can verify this by running rails db:seed
-run `$ db:seed`
+run `$ rails db:seed`
 
 head over to: http://localhost:3000/api/v1/friends
 to see the results in your db. the test data we wrote in the seed.rb file should now be displayed in JSON format:
