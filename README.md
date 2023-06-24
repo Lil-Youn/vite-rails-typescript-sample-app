@@ -14,11 +14,13 @@ create a new controller to show your page in the frontend with the index method
 In routes.rb, link the root route to the index method.
 your routes.rb file should now look like this
 
+```ruby
 Rails.application.routes.draw do
 get 'homepage/index'
 root 'homepage#index'
 
 end
+```
 
 # Set up the database
 
