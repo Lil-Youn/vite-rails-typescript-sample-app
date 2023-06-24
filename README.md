@@ -66,11 +66,13 @@ open this file: sample-app/app/controllers/api/v1/friends_controller.rb
 
 and add this:
 
+```ruby
 def index
 @friends = Friend.all
 render json: @friends
 end
 end
+```
 
 This retrieves articles from the database and renders the articles in JSON.
 
