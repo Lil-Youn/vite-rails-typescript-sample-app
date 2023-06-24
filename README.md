@@ -195,7 +195,7 @@ Now that we have created our React components, we can integrate them into our Ra
 
 Remove the 
 
-```html.erb 
+```
 <%= vite_javascript_tag ‘application' %>
 ```
 as we have deleted app/javascript/entrypoints/application.js. Include this javascript tag: (https://github.com/Lil-Youn/vite-rails-typescript-sample-app/blob/2a415c7f647a4aa753c1b539d6bd1a670336a436/app/views/layouts/application.html.erb#L10) to load the index.jsx file we have defined earlier.
