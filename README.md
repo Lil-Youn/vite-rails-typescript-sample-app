@@ -76,12 +76,7 @@ This retrieves articles from the database and renders the articles in JSON.
 
 Our frontend app needs to call APIs via an API endpoint. In config/routes.rb, add the following:
 
-namespace :api do
-namespace :v1 do
-resources :friends, only: [:index]
-end
-end
-end
+https://github.com/Lil-Youn/vite-rails-typescript-sample-app/blob/d82b420acdb21ea87e229d8cca57f441810e0905/config/routes.rb#L4C1-L8
 
 This adds a route at api/v1/friends and links it to the index method in the Friends controller. For this tutorial, I will only be creating the index API, but as more CRUD APIs are created, feel free to remove the only: [:index] code to generate routes for all CRUD operations.
 
