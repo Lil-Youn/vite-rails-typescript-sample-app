@@ -150,7 +150,7 @@ then move to sample-app/app/frontend/entrypoints/application.js, remove this fil
 
 write this code into the new index.jsx file
 
-```react
+```json
 import React from 'react';
 import ReactDOM from 'react-dom';
 
