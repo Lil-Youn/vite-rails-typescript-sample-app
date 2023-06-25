@@ -32,7 +32,11 @@ $ rails db:create
 
 # Start the App
 
-use command `$rails s` to start the app
+use command 
+```shell
+$rails s
+```
+to start the app
 
 You should now see a simple site with this text:
 
@@ -44,15 +48,26 @@ Find me in app/views/homepage/index.html.erb
 We have a minimal setup which we can add APIs to. To create APIs, we have to generate models, controllers and the relevant API endpoints.
 
 We will create a simple friends app, so lets set up the model:
-use `$rails generate model Friend first_name:string last_name:string email:string twitter:string`
+use 
+```shell
+$rails generate model Friend first_name:string last_name:string email:string twitter:string
+```
 
 This sets up our database for Friends and adds some extra files for managing the database model
 
-Then perform database migrations with `$rails db:migrate`. Run this command each time you make changes to the databases, such as adding or modifying models.
+Then perform database migrations with 
+```shell
+$rails db:migrate
+```
+Run this command each time you make changes to the databases, such as adding or modifying models.
 
 # Generating controllers
 
-Our API code will be written in controller files. To create a controller for articles, run this command:`$rails generate controller api/v1/Friends index --skip-routes`. The controller is namespaced with api/v1 to indicate that the controllers are for APIs and to version the APIs.
+Our API code will be written in controller files. To create a controller for articles, run this command:
+```shell
+$rails generate controller api/v1/Friends index --skip-routes
+```
+The controller is namespaced with api/v1 to indicate that the controllers are for APIs and to version the APIs.
 
 This should generate this files:
 
@@ -107,7 +122,10 @@ Friend.create([{first_name: 'John', last_name: 'Smith', email: 'john.smith@gmail
 
 
 # This will create three friends in the database. You can verify this by running rails db:seed
-run `$ rails db:seed`
+run 
+```shell
+$ rails db:seed
+```
 
 head over to: http://localhost:3000/api/v1/friends
 to see the results in your db. the test data we wrote in the seed.rb file should now be displayed in JSON format:
@@ -124,9 +142,17 @@ We have created APIs in our Rails app, and are now ready to set up the frontend 
 
 First, install the vite_rails gem by including this in your Gemfile: gem 'vite_rails'.
 
-Install the gem in your project with the `$bundle install` command.
+Install the gem in your project with the 
+```shell
+$bundle install
+```
+command.
 
-Run `$bundle exec vite install` to install the relevant Javascript dependencies and sample files.
+Run 
+```shell
+$bundle exec vite install
+```
+to install the relevant Javascript dependencies and sample files.
 
 define a script to run the Vite development server in our package.json:
 
@@ -142,7 +168,10 @@ define a script to run the Vite development server in our package.json:
 }
 ```
 
-# run `$bin/vite upgrade`
+# run 
+```shell
+$bin/vite upgrade
+```
 
 to upgrade vite to the newest version
 
@@ -150,7 +179,10 @@ open the devtools/console when on localhost:3000 and see “Vite ⚡️ Rails”
 
 # writing React code
 
-run `$npm install react react-dom`
+run 
+```shell
+$npm install react react-dom
+```
 
 then move to sample-app/app/frontend/entrypoints/application.js, remove this file and create a new file: sample-app/app/frontend/entrypoints/index.jsx
 
@@ -216,12 +248,23 @@ this should render the whole component in a more readable way.
 
 # Lets add Typescript to this project...
 
-run `$npm i typescript`
+run 
+```shell
+$npm i typescript
+```
 
 package installed. you should be able to rename your App.jsx file to App.tsx and write typescript code now... BOOOOOOM!
 
 # start the whole app
-run `$ rails s`to start the rails server and in a seperate or splitted terminal run `$ npm run dev`to start the frontend with vite
+run 
+```shell
+$ rails s
+```
+to start the rails server and in a seperate or splitted terminal run 
+```shell
+$ npm run dev
+```
+to start the frontend with vite
 
 # Project information
 Based on the Creating a React, Rails and Vite App from Chow Jia Ying / https://medium.com/@chowjiaying211/creating-a-react-rails-and-vite-app-74bb9b08a011 from Aug 12, 2021
