@@ -24,7 +24,10 @@ end
 
 # Set up the database
 
-Start with rails `$ rails db:create`, this creates the test_app_development and test_app_test databases for development
+Start with ```shell
+`$ rails db:create`
+```
+, this creates the test_app_development and test_app_test databases for development
 
 # Start the App
 
