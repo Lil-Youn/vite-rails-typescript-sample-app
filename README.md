@@ -168,7 +168,8 @@ define a script to run the Vite development server in our package.json:
 }
 ```
 
-# run 
+# Upgrade Vite.js
+Simply run
 ```shell
 $bin/vite upgrade
 ```
