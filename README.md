@@ -24,8 +24,9 @@ end
 
 # Set up the database
 
-Start with ```shell
-`$ rails db:create`
+Start with 
+```shell
+$ rails db:create
 ```
 , this creates the test_app_development and test_app_test databases for development
 
